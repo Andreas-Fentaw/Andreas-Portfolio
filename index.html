@@ -10,37 +10,46 @@
 </head>
 <body>
     <header>
-        <h4>Andreas Fentaw</h4>
-        <div class="headerLinks">
-            <a href="https://github.com/neighborhood-karen" target="_blank">
-                <img src="images/github-mark-white.png" alt="my github" class="githubLogo">
-            </a>
-            <a href="https://www.linkedin.com/in/andreas-fentaw-359568311/" target="_blank">
-                <img src="images/In-White-128@2x.png" alt="my linkedin" class="linkedinLogo">
-            </a>
-            <a href="mailto:andreasfentaw@gmail.com" target="_blank" onclick="openInNewWindow(event)">
-                <img src="images/gmaillogo.jpg" alt="my email" class="gmailLogo">
-            </a>
-
-            <script>
-                function openInNewWindow(event) {
-                    event.preventDefault();
-                    const url = event.currentTarget.href;
-                    window.open(url, 'newwindow', 'width=800,height=600');
-                }
-            </script>
+        <div class="navbarRight">
+            <h4 id="My Name">Andreas Fentaw</h4>
+            <div class="headerLinks">
+                <a href="https://github.com/neighborhood-karen" target="_blank">
+                    <img src="images/github-mark-white.png" alt="my github" class="githubLogo">
+                </a>
+                <a href="https://www.linkedin.com/in/andreas-fentaw-359568311/" target="_blank">
+                    <img src="images/In-White-128@2x.png" alt="my linkedin" class="linkedinLogo">
+                </a>
+                <a href="mailto:andreasfentaw@gmail.com" target="_blank" onclick="openInNewWindow(event)">
+                    <img src="images/gmaillogo.jpg" alt="my email" class="gmailLogo">
+                </a>
+                <script>
+                    function openInNewWindow(event) {
+                        event.preventDefault();
+                        const url = event.currentTarget.href;
+                        window.open(url, 'newwindow', 'width=800,height=600');
+                    }
+                </script>
+        </div>
+        
+        </div>
+        <div class="myPage">
+            <div class="mypageLinks">
+                <a href="Link1.html" id="myLink1"> <h1>My Projects</h1> </a>
+                <a href="Link2.html" id="myLink2"> <h1>About Me</h1> </a>
+                <a href="Link3.html" id="myLink3"> <h1>Technical Skills</h1> </a>
+                <a href="Link4.html" id="myLink4"> <h1>My Experience</h1> </a>
+            </div>
         </div>
     </header>
     <div class="myPicContainer">
-        <img src="https://cdn.icon-icons.com/icons2/710/PNG/512/file-23_icon-icons.com_62085.png" alt="my picture" class="myPic">
+        <img src="images/my-pic.jpg" alt="my picture" class="myPic">
     </div>
-    <div class="myPage">
-        <ol class="mypageLinks">
-            <a href="Link1.html" id="myLink1"> <h1>My Projects</h1> </a>
-            <a href="Link2.html" id="myLink2"> <h1>About Me</h1> </a>
-            <a href="Link3.html" id="myLink3"> <h1>Technical Skills</h1> </a>
-            <a href="Link4.html" id="myLink4"> <h1>My Experience</h1> </a>
-        </ol>
+    <div>
+        <div class="myName">
+            <h1>Andreas Fentaw</h1>
+        </div>
+
     </div>
+
 </body>
 </html>

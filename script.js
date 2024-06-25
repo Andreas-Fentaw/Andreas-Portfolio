@@ -1,52 +1,66 @@
 let myLink1 = document.querySelector("#myLink1");
-let myLink2 = document.querySelector("#myLink2");
-let myLink3 = document.querySelector("#myLink3");
-let myLink4 = document.querySelector("#myLink4");
-
-//----------------------------------------------------------------------------------------------
 
 myLink1.addEventListener("mouseover", function () {
     myLink1.style.color = "black";
-    myLink1.style.fontSize = "1.8vw";
-});
-
+    });
+    
 myLink1.addEventListener("mouseout", function () {
     myLink1.style.color = "rgb(76, 76, 76)";
-    myLink1.style.fontSize = "1.4vw";
-});
 
+    });
+        
 //----------------------------------------------------------------------------------------------
 
+let myLink2 = document.querySelector("#myLink2");
+
+        
 myLink2.addEventListener("mouseover", function () {
     myLink2.style.color = "black";
-    myLink2.style.fontSize = "1.8vw";
 });
 
 myLink2.addEventListener("mouseout", function () {
     myLink2.style.color = "rgb(76, 76, 76)";
-    myLink2.style.fontSize = "1.4vw";
+
 });
 
 //----------------------------------------------------------------------------------------------
 
+let myLink3 = document.querySelector("#myLink3");
+
 myLink3.addEventListener("mouseover", function () {
     myLink3.style.color = "black";
-    myLink3.style.fontSize = "1.8vw";
 });
 
 myLink3.addEventListener("mouseout", function () {
     myLink3.style.color = "rgb(76, 76, 76)";
-    myLink3.style.fontSize = "1.4vw";
+
 });
 
 //----------------------------------------------------------------------------------------------
 
+let myLink4 = document.querySelector("#myLink4");
+
 myLink4.addEventListener("mouseover", function () {
     myLink4.style.color = "black";
-    myLink4.style.fontSize = "1.8vw";
 });
 
 myLink4.addEventListener("mouseout", function () {
     myLink4.style.color = "rgb(76, 76, 76)";
-    myLink4.style.fontSize = "1.4vw";
 });
+
+//----------------------------------------------------------------------------------------------
+
+let header = document.querySelector("header");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+
+    let scrollThreshold = window.innerHeight * 0.2;
+
+    if (document.body.scrollTop > 65 || document.documentElement.scrollTop > 65) {
+      header.style.paddingTop = "0.5vw";
+    } else {
+      header.style.paddingTop = "2vw";
+    }
+}
