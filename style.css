@@ -72,8 +72,7 @@ header h4 {
 .myPic {
     width: 100%;
     height: 100%;
-    background-color: lightblue;
-    border-radius: 30%;
+    background-color: rgb(194, 228, 239);
 }
 /* MY PICS CSS END */
 
@@ -88,19 +87,16 @@ header h4 {
     margin-top: -2.5vw;
 }
 
-#myLink1, #myLink2, #myLink3, #myLink4 {
-    color: rgb(255, 255, 255);
+#myLink1, #myLink2, #myLink3{
+    color: rgb(76, 76, 76);
     text-decoration: none;
     transition: all 0.3s ease; 
     display: block;
     width: auto;
 }
 
-#myLink1 h1, #myLink2 h1, #myLink3 h1, #myLink4 h1 {
-    margin: 0px;
-    padding: 0px;
-    font-size: 1.8vw;
-    margin-right: 3vw;
+#myLink1 h1, #myLink2 h1, #myLink3 h1 {
+    margin-bottom: 5vw;
 }
 
 .myPage {
