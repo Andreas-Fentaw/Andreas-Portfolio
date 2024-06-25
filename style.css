@@ -1,16 +1,16 @@
 @font-face {
     font-family: playright;
-    src: url(fonts/PlaywriteNGModern-Regular.ttf);
+    src: url(../fonts/PlaywriteNGModern-Regular.ttf);
 }
 
 @font-face {
     font-family: playrightLight;
-    src: url(fonts/PlaywriteNGModern-Light.ttf);
+    src: url(../fonts/PlaywriteNGModern-Light.ttf);
 }
 
 @font-face {
     font-family: playrightThin;
-    src: url(fonts/PlaywriteNGModern-Thin.ttf);
+    src: url(../fonts/PlaywriteNGModern-Thin.ttf);
 }
 
 body {
@@ -25,7 +25,7 @@ body {
 header {
     position: sticky;
     top: 0;
-    background-color: #0b0032;
+    background-color: #2b2b2c;
     color: white;
     padding-top: 2vw;
     padding-left: 2.5vw;
@@ -56,7 +56,7 @@ header h4 {
 .headerLinks img {
     width: 1.6vw;
 }
-/* BODY CSS START */
+/* Header CSS END */
 
 
 
@@ -72,8 +72,7 @@ header h4 {
 .myPic {
     width: 100%;
     height: 100%;
-    background-color: lightblue;
-    border-radius: 30%;
+    background-color: rgb(194, 228, 239);
 }
 /* MY PICS CSS END */
 
@@ -88,19 +87,16 @@ header h4 {
     margin-top: -2.5vw;
 }
 
-#myLink1, #myLink2, #myLink3, #myLink4 {
-    color: rgb(255, 255, 255);
+#myLink1, #myLink2, #myLink3{
+    color: rgb(76, 76, 76);
     text-decoration: none;
     transition: all 0.3s ease; 
     display: block;
     width: auto;
 }
 
-#myLink1 h1, #myLink2 h1, #myLink3 h1, #myLink4 h1 {
-    margin: 0px;
-    padding: 0px;
-    font-size: 1.8vw;
-    margin-right: 3vw;
+#myLink1 h1, #myLink2 h1, #myLink3 h1 {
+    margin-bottom: 5vw;
 }
 
 .myPage {
