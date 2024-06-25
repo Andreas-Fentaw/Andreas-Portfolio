@@ -10,25 +10,35 @@
     </head>
 <body>
     <header>
-        <h4>Andreas Fentaw</h4>
-        <div class="headerLinks">
-            <a href="https://github.com/neighborhood-karen" target="_blank">
-                <img src="../images/github-mark-white.png" alt="my github" class="githubLogo">
-            </a>
-            <a href="https://www.linkedin.com/in/andreas-fentaw-359568311/" target="_blank">
-                <img src="../images/In-White-128@2x.png" alt="my linkedin" class="linkedinLogo">
-            </a>
-            <a href="mailto:andreasfentaw@gmail.com" target="_blank" onclick="openInNewWindow(event)">
-                <img src="../images/gmaillogo.jpg" alt="my email" class="gmailLogo">
-            </a>
-
-            <script>
-                function openInNewWindow(event) {
-                    event.preventDefault();
-                    const url = event.currentTarget.href;
-                    window.open(url, 'newwindow', 'width=800,height=600');
-                }
-            </script>
+        <div class="navbarRight">
+            <h4 id="My Name">Andreas Fentaw</h4>
+            <div class="headerLinks">
+                <a href="https://github.com/neighborhood-karen" target="_blank">
+                    <img src="../images/github-mark-white.png" alt="my github" class="githubLogo">
+                </a>
+                <a href="https://www.linkedin.com/in/andreas-fentaw-359568311/" target="_blank">
+                    <img src="../images/In-White-128@2x.png" alt="my linkedin" class="linkedinLogo">
+                </a>
+                <a href="mailto:andreasfentaw@gmail.com" target="_blank" onclick="openInNewWindow(event)">
+                    <img src="../images/gmaillogo.jpg" alt="my email" class="gmailLogo">
+                </a>
+                <script>
+                    function openInNewWindow(event) {
+                        event.preventDefault();
+                        const url = event.currentTarget.href;
+                        window.open(url, 'newwindow', 'width=800,height=600');
+                    }
+                </script>
+            </div>
+        
+        </div>
+        <div class="myPage">
+            <div class="mypageLinks">
+                <a href="../Pages/My-projects.html" id="myLink1"> <h1>My Projects</h1> </a>
+                <a href="../Pages/Technical-skills.html" id="myLink2"> <h1>Technical Skills</h1> </a>
+                <a href="../Andreas-Portfolio/Pages/My-experience.html" id="myLink3"> <h1>My Experience</h1> </a>
+                <a href="../index.html" id="myLink4"> <h1>Home</h1> </a>
+            </div>
         </div>
     </header>
 </body>

@@ -33,15 +33,22 @@ header {
     top: 0;
     background-color: #2b2b2c;
     color: white;
+    padding-top: 2vw;
     padding-left: 2.5vw;
     padding-bottom: 1vw;
     z-index: 3;
+    transition: padding-top 0.3s ease;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     font-family: playright;
+}
+
+.navbarRight {
+    width: 60%;
 }
 
 header h4 {
     margin: 0px;
-    padding-top: 2vw;
     padding-bottom: 0.5vw;
     font-size: 1.7vw;
 }
@@ -49,7 +56,7 @@ header h4 {
 .headerLinks {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 0.9vw;
+    gap: 1vw;
     width: 10%;
 }
 
@@ -57,6 +64,38 @@ header h4 {
     width: 1.6vw;
 }
 /* Header CSS END */
+
+/* MY PAGES CSS */
+
+.mypageLinks {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    margin-top: -2.5vw;
+}
+
+#myLink1, #myLink2, #myLink3, #myLink4 {
+    color: rgb(76, 76, 76);
+    text-decoration: none;
+    transition: all 0.3s ease; 
+    display: block;
+    width: auto;
+}
+
+#myLink1 h1, #myLink2 h1, #myLink3 h1, #myLink4 h1 {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1.8vw;
+    margin-right: 3vw;
+}
+
+.myPage {
+    display: flex;
+    align-items: center;
+    width: 70vw;
+}
+
+/* MY PAGES CSS END */
 
 /* MY PROJECTS CSS START */
 
