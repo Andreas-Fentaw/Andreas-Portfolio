@@ -1,0 +1,101 @@
+@font-face {
+    font-family: playright;
+    src: url(../fonts/PlaywriteNGModern-Regular.ttf);
+}
+
+@font-face {
+    font-family: playrightLight;
+    src: url(../fonts/PlaywriteNGModern-Light.ttf);
+}
+
+@font-face {
+    font-family: playrightThin;
+    src: url(../fonts/PlaywriteNGModern-Thin.ttf);
+}
+
+@font-face {
+    font-family: Cronus;
+    src: url(../fonts/CronusRound-KA6y.ttf)
+}
+
+@font-face {
+    font-family: CronusItalics;
+    src: url(../fonts/PlaywriteNGModern-Thin.ttf);
+}
+
+body {
+    margin: 0;
+}
+
+/* HEADER CSS START */
+header {
+    position: sticky;
+    top: 0;
+    background-color: #2b2b2c;
+    color: white;
+    padding-left: 2.5vw;
+    padding-bottom: 1vw;
+    z-index: 3;
+    font-family: playright;
+}
+
+header h4 {
+    margin: 0px;
+    padding-top: 2vw;
+    padding-bottom: 0.5vw;
+    font-size: 1.7vw;
+}
+
+.headerLinks {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.9vw;
+    width: 10%;
+}
+
+.headerLinks img {
+    width: 1.6vw;
+}
+/* Header CSS END */
+
+/* MY PROJECTS CSS START */
+
+.title {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.7vh;
+    font-family: Cronus;
+    font-size: 4.3vh;
+}
+
+.projectGridbox {
+    margin-top: 1vh;
+    margin-left: 1.4vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3vw;
+    font-family: Cronus;
+    width: 90vw;
+    height: 53vh;
+}
+
+.projectGridbox a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: lightblue solid 2px;
+    width: 30vw;
+}
+
+.projlinks div {
+    display: none;
+}
+
+#unit2proj {
+    background-image: url(../images/Andreas_Unit\ 2\ Project.png);
+    background-position-y: center ;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+/* MY PROJECTS CSS END */

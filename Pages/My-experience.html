@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Andreas's Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <script defer src="script.js"></script>
+    </head>
+<body>
+    <header>
+        <h4>Andreas Fentaw</h4>
+        <div class="headerLinks">
+            <a href="https://github.com/neighborhood-karen" target="_blank">
+                <img src="../images/github-mark-white.png" alt="my github" class="githubLogo">
+            </a>
+            <a href="https://www.linkedin.com/in/andreas-fentaw-359568311/" target="_blank">
+                <img src="../images/In-White-128@2x.png" alt="my linkedin" class="linkedinLogo">
+            </a>
+            <a href="mailto:andreasfentaw@gmail.com" target="_blank" onclick="openInNewWindow(event)">
+                <img src="../images/gmaillogo.jpg" alt="my email" class="gmailLogo">
+            </a>
+
+            <script>
+                function openInNewWindow(event) {
+                    event.preventDefault();
+                    const url = event.currentTarget.href;
+                    window.open(url, 'newwindow', 'width=800,height=600');
+                }
+            </script>
+        </div>
+    </header>
+</body>
+</html>

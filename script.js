@@ -3,10 +3,13 @@ let myLink2 = document.querySelector("#myLink2");
 let myLink3 = document.querySelector("#myLink3");
 let myLink4 = document.querySelector("#myLink4");
 
+let homefontcolor = "black";
+
+
 //----------------------------------------------------------------------------------------------
 
 myLink1.addEventListener("mouseover", function () {
-    myLink1.style.color = "black";
+    myLink1.style.color = homefontcolor;
     myLink1.style.fontSize = "1.8vw";
 });
 
@@ -18,7 +21,7 @@ myLink1.addEventListener("mouseout", function () {
 //----------------------------------------------------------------------------------------------
 
 myLink2.addEventListener("mouseover", function () {
-    myLink2.style.color = "black";
+    myLink2.style.color = homefontcolor;
     myLink2.style.fontSize = "1.8vw";
 });
 
@@ -30,7 +33,7 @@ myLink2.addEventListener("mouseout", function () {
 //----------------------------------------------------------------------------------------------
 
 myLink3.addEventListener("mouseover", function () {
-    myLink3.style.color = "black";
+    myLink3.style.color = homefontcolor;
     myLink3.style.fontSize = "1.8vw";
 });
 
@@ -42,7 +45,7 @@ myLink3.addEventListener("mouseout", function () {
 //----------------------------------------------------------------------------------------------
 
 myLink4.addEventListener("mouseover", function () {
-    myLink4.style.color = "black";
+    myLink4.style.color = homefontcolor;
     myLink4.style.fontSize = "1.8vw";
 });
 
