@@ -1,12 +1,13 @@
 let myLink1 = document.querySelector("#myLink1");
 
+mylinksColor = "white"
+
 myLink1.addEventListener("mouseover", function () {
-    myLink1.style.color = "black";
+    myLink1.style.color = mylinksColor;
     });
     
 myLink1.addEventListener("mouseout", function () {
     myLink1.style.color = "rgb(76, 76, 76)";
-
     });
         
 //----------------------------------------------------------------------------------------------
@@ -15,7 +16,7 @@ let myLink2 = document.querySelector("#myLink2");
 
         
 myLink2.addEventListener("mouseover", function () {
-    myLink2.style.color = "black";
+    myLink2.style.color = mylinksColor;
 });
 
 myLink2.addEventListener("mouseout", function () {
@@ -28,7 +29,7 @@ myLink2.addEventListener("mouseout", function () {
 let myLink3 = document.querySelector("#myLink3");
 
 myLink3.addEventListener("mouseover", function () {
-    myLink3.style.color = "black";
+    myLink3.style.color =  mylinksColor;
 });
 
 myLink3.addEventListener("mouseout", function () {
@@ -41,7 +42,7 @@ myLink3.addEventListener("mouseout", function () {
 let myLink4 = document.querySelector("#myLink4");
 
 myLink4.addEventListener("mouseover", function () {
-    myLink4.style.color = "black";
+    myLink4.style.color = mylinksColor;
 });
 
 myLink4.addEventListener("mouseout", function () {
