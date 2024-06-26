@@ -33,7 +33,7 @@ header {
     top: 0;
     background-color: #2b2b2c;
     color: white;
-    padding-top: 2vw;
+    padding-top: 1vw;
     padding-left: 2.5vw;
     padding-bottom: 1vw;
     z-index: 3;
@@ -75,7 +75,7 @@ header h4 {
 }
 
 #myLink1, #myLink2, #myLink3, #myLink4 {
-    color: rgb(76, 76, 76);
+    color: rgb(157, 157, 157);
     text-decoration: none;
     transition: all 0.3s ease; 
     display: block;
