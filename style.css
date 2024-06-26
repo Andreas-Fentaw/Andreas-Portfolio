@@ -1,16 +1,16 @@
 @font-face {
     font-family: playright;
-    src: url(../Andreas-Portfolio/fonts/PlaywriteNGModern-Regular.ttf);
+    src: url(../fonts/PlaywriteNGModern-Regular.ttf);
 }
 
 @font-face {
     font-family: playrightLight;
-    src: url(../Andreas-Portfolio/fonts/PlaywriteNGModern-Light.ttf);
+    src: url(../fonts/PlaywriteNGModern-Light.ttf);
 }
 
 @font-face {
     font-family: playrightThin;
-    src: url(../Andreas-Portfolio/fonts/PlaywriteNGModern-Thin.ttf);
+    src: url(../fonts/PlaywriteNGModern-Thin.ttf);
 }
 
 body {
@@ -34,6 +34,7 @@ header {
     transition: padding-top 0.3s ease;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    font-family: playright;
 }
 
 .navbarRight {
