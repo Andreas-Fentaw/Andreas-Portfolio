@@ -86,7 +86,8 @@ header h4 {
     margin: 0;
     width: 100%;
     display: flex;
-    margin-top: -2.5vw;
+    margin-top: -2.5%;
+    padding-left: 3%;
 }
 
 #myLink1, #myLink2, #myLink3, #myLink4 {
