@@ -3,7 +3,6 @@ let myLink1 = document.querySelector("#myLink1");
 mylinksColor = "white";
 myLinksColorOut = "rgb(157, 157, 157)";
 
-
 myLink1.addEventListener("mouseover", function () {
     myLink1.style.color = mylinksColor;
     });
@@ -38,20 +37,7 @@ myLink3.addEventListener("mouseout", function () {
     myLink3.style.color = myLinksColorOut;
 
 });
-
 //----------------------------------------------------------------------------------------------
-
-let myLink4 = document.querySelector("#myLink4");
-
-myLink4.addEventListener("mouseover", function () {
-    myLink4.style.color = mylinksColor;
-});
-
-myLink4.addEventListener("mouseout", function () {
-    myLink4.style.color = myLinksColorOut;
-});
-
-// HEADER COLLAPSE JS ------------------------------------------------------------------------------------------
 
 let header = document.querySelector("header");
 
@@ -59,11 +45,16 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
 
-    let scrollThreshold = window.innerHeight * 0.2;
-
-    if (document.body.scrollTop > 65 || document.documentElement.scrollTop > 65) {
-      header.style.paddingTop = "0.5vw";
+    let scrollThreshold = window.innerHeight * 0.03;
+    let myName = document.querySelector(".myName");
+    if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+      header.style.paddingTop = "0vw";
+      header.style.paddingBottom = "0vw";
+      myName.style.paddingTop = "6vw";
     } else {
-      header.style.paddingTop = "2vw";
+      header.style.paddingTop = "1vw";
+      header.style.paddingBottom = "1vw";
+      myName.style.paddingTop = "5";
     }
 }
+// MAKE IT SO THE HEADER LINKS GET MOVED CLOSER TO THE TITLE WHEN YOU SCROLL DOWN
