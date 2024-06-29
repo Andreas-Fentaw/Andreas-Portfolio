@@ -114,13 +114,15 @@ header h4 {
 }
 
 #myLink1 h1, #myLink2 h1, #myLink3 h1 {
-    margin-bottom: 5vw;
+    margin-left: 3vw;
+    font-size: 2vw;
 }
 
 .myPage {
     display: flex;
     align-items: center;
     width: 70vw;
+    margin-left: -7%;
 }
 
 /* MY PAGES CSS END */
