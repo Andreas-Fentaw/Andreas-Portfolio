@@ -71,6 +71,36 @@ header h4 {
 
 /* Header CSS END */
 
+/* MY PAGES CSS */
+
+.mypageLinks {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    margin-top: -2.5vw;
+}
+
+#myLink1, #myLink2, #myLink3{
+    color: rgb(157, 157, 157);
+    text-decoration: none;
+    transition: all 0.3s ease; 
+    display: block;
+    width: auto;
+}
+
+#myLink1 h1, #myLink2 h1, #myLink3 h1 {
+    margin-left: 3vw;
+    font-size: 2vw;
+}
+
+.myPage {
+    display: flex;
+    align-items: center;
+    width: 70vw;
+    margin-left: -7%;
+}
+
+/* MY PAGES CSS END */
 
 
 /* MY PICS CSS START */
@@ -96,37 +126,6 @@ header h4 {
 
 
 
-/* MY PAGES CSS */
-
-.mypageLinks {
-    margin: 0;
-    width: 100%;
-    display: flex;
-    margin-top: -2.5vw;
-}
-
-#myLink1, #myLink2, #myLink3{
-    color: rgb(76, 76, 76);
-    text-decoration: none;
-    transition: all 0.3s ease; 
-    display: block;
-    width: auto;
-}
-
-#myLink1 h1, #myLink2 h1, #myLink3 h1 {
-    margin-left: 3vw;
-    font-size: 2vw;
-}
-
-.myPage {
-    display: flex;
-    align-items: center;
-    width: 70vw;
-    margin-left: -7%;
-}
-
-/* MY PAGES CSS END */
-
 /* CONTENT CSS START */
 
 .myName{
@@ -146,7 +145,7 @@ header h4 {
 }
 
 .introToMe {
-    height: 100vh;
+    height: 1000vh;
     background-color: rgb(186, 190, 194);
     margin: 0px;
     padding-top: 10vh;
