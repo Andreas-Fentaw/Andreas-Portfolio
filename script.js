@@ -56,11 +56,25 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
 
+<<<<<<< Updated upstream
     let scrollThreshold = window.innerHeight * 0.2;
 
     if (document.body.scrollTop > 65 || document.documentElement.scrollTop > 65) {
       header.style.paddingTop = "0.5vw";
     } else {
       header.style.paddingTop = "2vw";
+=======
+    let scrollThreshold = window.innerHeight * 0.03;
+    let myName = document.querySelector(".myName");
+    if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+      header.style.paddingTop = "0vw";
+      header.style.paddingBottom = "0vw";
+      myName.style.paddingTop = "6vw";
+    } else {
+      header.style.paddingTop = "1vw";
+      header.style.paddingBottom = "1vw";
+      myName.style.paddingTop = "5";
+>>>>>>> Stashed changes
     }
 }
+// MAKE IT SO THE HEADER LINKS GET MOVED CLOSER TO THE TITLE WHEN YOU SCROLL DOWN
