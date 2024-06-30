@@ -53,6 +53,10 @@ header {
     width: 60%;
 }
 
+.navbarRight h4 {
+    font-size: 1.7vw;
+}
+
 header h4 {
     margin: 0px;
     padding-bottom: 3%;

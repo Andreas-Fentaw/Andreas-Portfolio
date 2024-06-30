@@ -57,4 +57,41 @@ function scrollFunction() {
       myName.style.paddingTop = "5";
     }
 }
-// MAKE IT SO THE HEADER LINKS GET MOVED CLOSER TO THE TITLE WHEN YOU SCROLL DOWN
+
+//----------------------------------------------------------------------------------------------
+let projectU2 = document.querySelector("#projectU2");
+
+projectU2.addEventListener("mouseover", function() {
+    projectU2.style.opacity = "100%";
+    console.log(projectU2);
+});
+
+projectU2.addEventListener("mouseout", function() {
+    projectU2.style.opacity = "0%";
+});
+
+//----------------------------------------------------------------------------------------------
+
+let projectU3 = document.querySelector("#projectU3");
+
+projectU3.addEventListener("mouseover", function() {
+    projectU3.style.opacity = "100%";
+    console.log(projectU3);
+});
+
+projectU3.addEventListener("mouseout", function() {
+    projectU3.style.opacity = "0%";
+});
+
+//----------------------------------------------------------------------------------------------
+
+let projectU4 = document.querySelector("#projectU4");
+
+projectU4.addEventListener("mouseover", function() {
+    projectU4.style.opacity = "100%";
+    console.log(projectU4);
+});
+
+projectU4.addEventListener("mouseout", function() {
+    projectU4.style.opacity = "0%";
+});

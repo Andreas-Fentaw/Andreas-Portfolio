@@ -6,69 +6,71 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Andreas's Portfolio</title>
         <link rel="stylesheet" href="style.css">
-        <script defer src="script.js"></script>
+        <script defer src="script.js"></script> 
     </head>
-<body>
-    <header>
-        <div class="navbarRight">
-            <h4 id="My Name">Andreas Fentaw</h4>
-            <div class="headerLinks">
-                <a href="https://github.com/neighborhood-karen" target="_blank">
-                    <img src="../images/github-mark-white.png" alt="my github" class="githubLogo">
-                </a>
-                <a href="https://www.linkedin.com/in/andreas-fentaw-359568311/" target="_blank">
-                    <img src="../images/In-White-128@2x.png" alt="my linkedin" class="linkedinLogo">
-                </a>
-                <a href="mailto:andreasfentaw@gmail.com" target="_blank" onclick="openInNewWindow(event)">
-                    <img src="../images/gmaillogo.jpg" alt="my email" class="gmailLogo">
-                </a>
-                <script>
-                    function openInNewWindow(event) {
-                        event.preventDefault();
-                        const url = event.currentTarget.href;
-                        window.open(url, 'newwindow', 'width=800,height=600');
-                    }
-                </script>
+    <body>
+        <header>
+            <div class="navbarRight">
+                <h4 id="My Name">Andreas Fentaw</h4>
+                <div class="headerLinks">
+                    <a href="https://github.com/neighborhood-karen" target="_blank">
+                        <img src="../images/github-mark-white.png" alt="my github" class="githubLogo">
+                    </a>
+                    <a href="https://www.linkedin.com/in/andreas-fentaw-359568311/" target="_blank">
+                        <img src="../images/In-White-128@2x.png" alt="my linkedin" class="linkedinLogo">
+                    </a>
+                    <a href="mailto:andreasfentaw@gmail.com" target="_blank" onclick="openInNewWindow(event)">
+                        <img src="../images/gmaillogo.jpg" alt="my email" class="gmailLogo">
+                    </a>
+                    <script>
+                        function openInNewWindow(event) {
+                            event.preventDefault();
+                            const url = event.currentTarget.href;
+                            window.open(url, 'newwindow', 'width=800,height=600');
+                        }
+                    </script>
+                </div>
+            
             </div>
-        
+            <div class="myPage">
+                <div class="mypageLinks">
+                    <a href="../index.html" id="myLink1">
+                        <h1>Home</h1>
+                    </a>
+                    <a href="../Pages/My-projects.html" id="myLink2">
+                        <h1>My Projects</h1>
+                    </a>
+                    <a href="../Pages/Technical-skills.html" id="myLink3">
+                        <h1>Technical Skills</h1> 
+                    </a>
+                    <a href="../Pages/My-experience.html" id="myLink4"> 
+                        <h1>My Experience</h1> 
+                    </a>
+                </div>
+            </div>
+        </header>
+        <div class="title">
+            <h1>Check out my Projects!</h1>
         </div>
-        <div class="myPage">
-            <div class="mypageLinks">
-                <a href="../index.html" id="myLink1">
-                    <h1>Home</h1>
-                </a>
-                <a href="../Pages/My-projects.html" id="myLink2">
-                    <h1>My Projects</h1>
-                </a>
-                <a href="../Pages/Technical-skills.html" id="myLink3">
-                    <h1>Technical Skills</h1> 
-                </a>
-                <a href="../Pages/My-experience.html" id="myLink4"> 
-                    <h1>My Experience</h1> 
-                </a>
-            </div>
+        <div class="projectGridbox"> 
+            <a href="https://neighborhood-karen.github.io/Andreas-Fentaw-s-Unit-2-Project/" target="_blank" id="unit2proj" class="projlink">
+                <div class="gridtext" id="projectU2">
+                    <h2>Bloomington Homelessness Resource</h1>
+                    <h4>HTML/CSS</h4>
+                </div>
+            </a>
+            <a href="https://neighborhood-karen.github.io/Unit-3-project/" target="_blank" class="projlink" id="unit3proj">
+                <div class="gridtext" id="projectU3">
+                    <h2>Choose Your Own Adventure Game</h1>
+                    <h4>HTML/CSS/JS</h4>
+                </div>
+            </a>
+            <a href="https://neighborhood-karen.github.io/Unit-4-project/" target="_blank" class="projlink" id="unit4proj">
+                <div class="gridtext" id="projectU4">
+                    <h2>Choose Your Own Adventure Game</h1>
+                    <h4>HTML/CSS/JS</h4>
+                </div>
+            </a>
         </div>
-    </header>
-    <div class="title">
-        <h1>My Projects</h1>
-    </div>
-    <div class="projectGridbox"> 
-        <a href="https://neighborhood-karen.github.io/Andreas-Fentaw-s-Unit-2-Project/" target="_blank" id="unit2proj" class="projlink">
-            <div class="gridtext">
-                <h4>HTML/CSS</h4>
-                <h2>Bloomington Homelessness Resource</h1>
-            </div>
-        </a>
-        <a href="https://neighborhood-karen.github.io/Unit-3-project/" target="_blank" class="projlink">
-            <div class="gridtext">
-                <h1>Unit 3 project</h1>
-            </div>
-        </a>
-        <a href="https://neighborhood-karen.github.io/Unit-4-project/" target="_blank" class="projlink">
-            <div class="gridtext">
-                <h1>Unit 4 project</h1>
-            </div>
-        </a>
-    </div>
-</body>
+    </body>
 </html>
