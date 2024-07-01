@@ -29,7 +29,7 @@ body {
 }
 
 .landingPage {
-    background-color: rgb(230, 220, 204);
+    background-color: rgb(235, 210, 169);
     margin: 0px;
 }
 
@@ -151,24 +151,34 @@ header h4 {
 }
 
 .introToMe {
-    height: 1000vh;
-    background-color: rgb(186, 190, 194);
+    height: 83vh;
+    background-color: rgb(244, 204, 139);
     margin: 0px;
     padding-top: 10vh;
 }
 
 .introToMe h1 {
     margin: 0px;
-    font-size: 3vw;
+    margin-bottom: 4vh;
+    font-size: 2vw;
     height: fit-content;
     display: flex;
     justify-content: center;
 }
 
-.intoToMeParagraph {
+.intoToMe {
     height: fit-content;
     display: flex;
     justify-content: center;
+}
+
+.intoToMe p {
+    font-size: 1vw;
+}
+
+.intoToMe img {
+    width: 40vw;
+    margin-left: 7vw;
 }
 
 /* CONTENT CSS END */
