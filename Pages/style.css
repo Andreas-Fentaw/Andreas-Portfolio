@@ -26,12 +26,12 @@
 body {
     margin: 0;
     font-family: playright;
-    background-color: rgb(230, 220, 204);
+    background-color: rgb(235, 210, 169);
     margin: 0px;
 }
 
 .landingPage {
-    background-color: rgb(230, 220, 204);
+    background-color: rgb(235, 210, 169);
     margin: 0px;
 }
 
@@ -41,7 +41,7 @@ header {
     top: 0;
     background-color: #2b2b2c;
     color: white;
-    padding-top: 2vw;
+    padding-top: 1vw;
     padding-left: 2.5vw;
     padding-bottom: 1vw;
     z-index: 3;
@@ -51,11 +51,7 @@ header {
 }
 
 .navbarRight {
-    width: 60%;
-}
-
-.navbarRight {
-    width: 60%;
+    width: 90%;
 }
 
 header h4 {
@@ -86,7 +82,7 @@ header h4 {
     margin-top: -2.5vw;
 }
 
-#myLink1, #myLink2, #myLink3, #myLink4{
+#myLink1, #myLink2, #myLink3, #myLink4, #myLink5 {
     color: rgb(157, 157, 157);
     text-decoration: none;
     transition: all 0.3s ease; 
@@ -94,16 +90,17 @@ header h4 {
     width: auto;
 }
 
-#myLink1 h1, #myLink2 h1, #myLink3 h1, #myLink4 h1 {
+#myLink1 h1, #myLink2 h1, #myLink3 h1, #myLink4 h1, #myLink5 h1{
     margin-left: 3vw;
     font-size: 2vw;
+    width: 100%;
 }
 
 .myPage {
     display: flex;
     align-items: center;
-    width: 70vw;
-    margin-left: -7%;
+    width: 80vw;
+    /* margin-left: -0%; */
 }
 
 /* MY PAGES CSS END */
@@ -144,7 +141,7 @@ header h4 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgba(147, 153, 155, 0.854);
+    background-color: rgba(217, 217, 217, 0.854);
     width: 100%;
     height: 100%;
     color: rgb(0, 0, 0);

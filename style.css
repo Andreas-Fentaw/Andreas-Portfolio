@@ -86,7 +86,7 @@ header h4 {
     padding-left: 3%;
 }
 
-#myLink1, #myLink2, #myLink3{
+#myLink1, #myLink2, #myLink3, #myLink4 {
     color: rgb(157, 157, 157);
     text-decoration: none;
     transition: all 0.3s ease; 
@@ -94,7 +94,7 @@ header h4 {
     width: auto;
 }
 
-#myLink1 h1, #myLink2 h1, #myLink3 h1 {
+#myLink1 h1, #myLink2 h1, #myLink3 h1, #myLink4 h1 {
     margin-left: 3vw;
     font-size: 2vw;
 }
@@ -103,7 +103,7 @@ header h4 {
     display: flex;
     align-items: center;
     width: 70vw;
-    margin-left: -7%;
+    margin-left: -15%;
 }
 
 /* MY PAGES CSS END */
@@ -116,7 +116,7 @@ header h4 {
     float: right;
     margin: 3vw;
     margin-left: 0px;
-    margin-right: 6vw;
+    margin-right: 18vw;
     margin-top: 1vw;
 }
 
@@ -136,7 +136,7 @@ header h4 {
 
 .myName{
     height: 80vh;
-    padding-left: 25vw;
+    padding-left: 15vw;
     padding-top: 6vw;
 }
 
@@ -155,12 +155,14 @@ header h4 {
     background-color: rgb(244, 204, 139);
     margin: 0px;
     padding-top: 10vh;
+    overflow: hidden;
 }
 
 .introToMe h1 {
     margin: 0px;
-    margin-bottom: 4vh;
-    font-size: 2vw;
+    margin-top: -6vh;
+    margin-bottom: 3vh;
+    font-size: 3.8vw;
     height: fit-content;
     display: flex;
     justify-content: center;
@@ -173,12 +175,22 @@ header h4 {
 }
 
 .intoToMe p {
-    font-size: 1vw;
+    padding-left: 4vw;
+    font-size: 1.9vw;
+    font-weight: 500;
+    height: fit-content;
+    width: 35vw;
+    background-color: rgb(247, 222, 183);
+    border:rgb(247, 222, 183) 5vw solid;
+    border-radius: 45%;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .intoToMe img {
     width: 40vw;
     margin-left: 7vw;
+    border-radius: 10%;
+    margin-bottom: 2vw;
 }
 
 /* CONTENT CSS END */

@@ -39,6 +39,30 @@ myLink3.addEventListener("mouseout", function () {
 });
 //----------------------------------------------------------------------------------------------
 
+let myLink4 = document.querySelector("#myLink4");
+
+myLink4.addEventListener("mouseover", function () {
+    myLink4.style.color =  mylinksColor;
+});
+
+myLink4.addEventListener("mouseout", function () {
+    myLink4.style.color = myLinksColorOut;
+
+});
+//----------------------------------------------------------------------------------------------
+
+let myLink5 = document.querySelector("#myLink5");
+
+myLink5.addEventListener("mouseover", function () {
+    myLink5.style.color =  mylinksColor;
+});
+
+myLink5.addEventListener("mouseout", function () {
+    myLink5.style.color = myLinksColorOut;
+
+});
+//----------------------------------------------------------------------------------------------
+
 let header = document.querySelector("header");
 
 window.onscroll = function() {scrollFunction()};
