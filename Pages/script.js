@@ -10,12 +10,11 @@ myLink1.addEventListener("mouseover", function () {
 myLink1.addEventListener("mouseout", function () {
     myLink1.style.color = myLinksColorOut;
     });
-        
+
 //----------------------------------------------------------------------------------------------
 
 let myLink2 = document.querySelector("#myLink2");
-
-        
+     
 myLink2.addEventListener("mouseover", function () {
     myLink2.style.color = mylinksColor;
 });
@@ -61,8 +60,8 @@ myLink5.addEventListener("mouseout", function () {
     myLink5.style.color = myLinksColorOut;
 
 });
-//----------------------------------------------------------------------------------------------
 
+//----------------------------------------------------------------------------------------------
 let header = document.querySelector("header");
 
 window.onscroll = function() {scrollFunction()};
