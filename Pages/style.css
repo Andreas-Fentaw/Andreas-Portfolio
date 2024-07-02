@@ -204,8 +204,18 @@ header h4 {
     align-items: center;
 }
 
+.section1 h1 {
+    margin: 0;
+    margin-bottom: 1vw;
+}
+
+.section1 p {
+    width: 50vw;
+}
+
 .myComputerIntroLogo {
-    margin-top: 8vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
     display: flex;
     flex-direction: row;
 }
@@ -216,7 +226,37 @@ header h4 {
 }
 
 .section2 {
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(244, 204, 139);
+}
+
+.section2 p {
+    width: 50vw;
+}
+
+.section2 img {
+    height: 25vw;
 }
 
 /* ABOUT ME CSS END */
+
+/* CONTACT ME CSS START */
+
+form {
+    margin-top: 10vw;
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    margin-left: 10vw;
+    margin-bottom: 3vw;
+    width: 50vw;
+}
+
+.message {
+    height: 5vw;
+}
+/* CONTACT ME CSS END */
