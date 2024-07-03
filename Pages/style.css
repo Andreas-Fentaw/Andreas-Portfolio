@@ -26,7 +26,7 @@
 body {
     margin: 0;
     font-family: playright;
-    background-color: rgb(235, 210, 169);
+    /* background-color: rgb(235, 210, 169); */
     margin: 0px;
 }
 
@@ -110,9 +110,14 @@ header h4 {
 .title {
     display: flex;
     justify-content: center;
-    margin-top: 0.7vh;
+    padding-top: 0.7vh;
     font-family: Cronus;
     font-size: 4.3vh;
+}
+
+.myProj {
+    background-color: rgb(143, 192, 210);
+    height: 85vh;
 }
 
 .projectGridbox {
@@ -133,9 +138,23 @@ header h4 {
     height: 20vw;
     width: 32%;
     text-decoration: none;
+    animation: projectSlideUp 1s forwards;
+    opacity: 0;
+}
+
+@keyframes projectSlideUp {
+    from {
+        transform: translatey(+100%);
+        opacity: 0;
+    }
+    to {
+        transform: translatey(0);
+        opacity: 1;
+    }
 }
 
 /* HIDDEN PROJECT DESCRIPTION */
+
 .gridtext {
     display: flex;
     flex-direction: column;
@@ -150,6 +169,11 @@ header h4 {
 .gridtext h4 {
     font-size: 1.6vw;
     margin: 0.2vw;
+}
+
+#projectU1 {
+    opacity: 0%;
+    transition: opacity 0.4s ease;
 }
 
 #projectU2 {
@@ -180,6 +204,7 @@ header h4 {
     background-size: 100%;
     background-repeat: no-repeat;
     background-position-y: center;
+    animation-delay: 0.5s;
 }
 
 #projectU4 {
@@ -192,16 +217,32 @@ header h4 {
     background-size: 100%;
     background-repeat: no-repeat;
     background-position-y: center;
+    animation-delay: 1s;
 }
 
 /* MY PROJECTS CSS END */
 
-/* ABOUT ME CSS START */
+/* MY ABOUT ME CSS START */
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
 
 .section1 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 2vw;
+    padding-bottom: 4vw;
+    background-color: rgb(235, 210, 169);
+    box-shadow: inset 0px -2vw 3vw rgb(244, 204, 139), inset 0 -1vw 1vw rgb(244, 204, 139);
 }
 
 .section1 h1 {
@@ -213,16 +254,49 @@ header h4 {
     width: 50vw;
 }
 
+.section1 img {
+    margin-right: 3vw;
+    opacity: 0;
+}
+
+#redditLogo {
+    margin: 0px;
+}
+
 .myComputerIntroLogo {
     margin-top: 2vw;
     margin-bottom: 2vw;
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
-#gamersNexusLogo, #LTTLogo, #redditLogo, #jayzTwoCentsLogo {
+#gamersNexusLogo {
     width: 10vw;
     height: 10vw;
+    animation: slideIn 1s forwards;
+    animation-delay: 0.5s;
+}
+
+#LTTLogo {
+    width: 10vw;
+    height: 10vw;
+    animation: slideIn 1s forwards;
+    animation-delay: 1s;
+}
+
+#jayzTwoCentsLogo {
+    width: 10vw;
+    height: 10vw;
+    animation: slideIn 1s forwards;
+    animation-delay: 1.5s;
+}
+
+#redditLogo {
+    width: 10vw;
+    height: 10vw;
+    animation: slideIn 1s forwards;
+    animation-delay: 2s;
 }
 
 .section2 {
@@ -240,23 +314,174 @@ header h4 {
     height: 25vw;
 }
 
-/* ABOUT ME CSS END */
+/* MY ABOUT ME CSS END */
 
-/* CONTACT ME CSS START */
+/* MY CONTACT ME CSS START */
+
+main {
+    background: linear-gradient(to right, rgb(142, 31, 222), rgb(204, 70, 249));
+    animation: gradient 7s ease infinite;
+    background-size: 200% 200%;
+    padding-top: 3vw;
+    height: 110vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+main h1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0.5vw;
+    margin-bottom: 4vw;
+    margin-top: 0.5vw; 
+    border-bottom: solid 0.5vw rgba(78, 28, 125, 0.854);
+    color: rgb(249, 226, 255);
+}
 
 form {
-    margin-top: 10vw;
+    padding-top: 2vw;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    background-color: rgba(122, 46, 192, 0.783);
+    padding-left: 5vw;
+    padding-right: 5vw;
+    border-radius: 5vw;
 }
 
 form input {
-    margin-left: 10vw;
     margin-bottom: 3vw;
     width: 50vw;
+    border: rgb(153, 80, 255) solid;
+    box-shadow: 0.25vw 0.25vw rgba(109, 141, 222, 0.799);
 }
 
-.message {
-    height: 5vw;
+#message {
+    height: 10vw;
+    width: 50vw;
+    border: rgb(111, 34, 255) solid;
+    box-shadow: 0.5vw 0.5vw rgba(109, 141, 222, 0.799);
 }
-/* CONTACT ME CSS END */
+
+#submit {
+    width: 5vw;
+    margin-top: 3vw;
+    margin-left: 50vw;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: rgb(143, 110, 203);
+    color: white;
+}
+/* MY CONTACT ME CSS END */
+
+/* MY TECHNICAL SKILLS CSS START */
+
+@keyframes pageBounce {
+    0% { background-position: 0% -20%; }
+    25% { background-position: 100% -20%; }
+    50% { background-position: 100% -120%; }
+    75% { background-position: 0% -120%; }
+    100% { background-position: 0% -20%; }
+}
+
+.page1 {
+    width: 100vw;
+    height: 220vh;
+    background: radial-gradient(circle, #b0ceb1 50%, transparent 50%), #79b48d; /* Dark circle with light background */
+    background-size: 150%; /* Make the dark circle cover nearly the whole viewport */
+    background-repeat: no-repeat;
+    animation: pageBounce 4s infinite linear;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: 200vh hidden;
+}
+
+.page1-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    background: linear-gradient(to right, rgb(234, 248, 226), rgb(115, 168, 130));
+    animation: gradient 5s ease infinite;
+    background-size: 200% 200%;
+}
+
+.page1 h1 {
+    margin-top: 1vw;
+    margin-bottom: 5vw;
+    font-size: 2.5vw;
+}
+
+.gridContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 5vw;
+    margin-bottom: 8vw;
+}
+
+.gridContainer img {
+    width: 20vw;
+}
+
+.imgContainer {
+    width: 15vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgContainer img {
+    height: 20vw;
+}
+
+#JavaScript-Logo {
+    height: 20vw;
+    width: 30vw;
+}
+
+.pythonLogo {
+    height: 20vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+figure {
+    margin-top: 0px;
+    padding: 8vw;
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+    border-radius: 3vw;
+    background-color: rgb(158,198,169);
+}
+
+figure img {
+    height: 20vw;
+    border-radius: 2vw;
+}
+
+figcaption {
+    display: flex;
+    justify-content: center;
+}
+/* MY TECHNICAL SKILLS CSS END */

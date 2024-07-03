@@ -39,6 +39,17 @@ myLink3.addEventListener("mouseout", function () {
 });
 //----------------------------------------------------------------------------------------------
 
+let myLink4 = document.querySelector("#myLink4");
+
+myLink4.addEventListener("mouseover", function () {
+    myLink4.style.color =  mylinksColor;
+});
+
+myLink4.addEventListener("mouseout", function () {
+    myLink4.style.color = myLinksColorOut;
+
+});
+//----------------------------------------------------------------------------------------------
 let header = document.querySelector("header");
 
 window.onscroll = function() {scrollFunction()};
@@ -57,4 +68,4 @@ function scrollFunction() {
       myName.style.paddingTop = "5";
     }
 }
-// MAKE IT SO THE HEADER LINKS GET MOVED CLOSER TO THE TITLE WHEN YOU SCROLL DOWN
+//----------------------------------------------------------------

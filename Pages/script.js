@@ -67,21 +67,30 @@ let header = document.querySelector("header");
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-
     let scrollThreshold = window.innerHeight * 0.03;
-    let myName = document.querySelector(".myName");
     if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
       header.style.paddingTop = "0vw";
       header.style.paddingBottom = "0vw";
-      myName.style.paddingTop = "6vw";
     } else {
       header.style.paddingTop = "1vw";
       header.style.paddingBottom = "1vw";
-      myName.style.paddingTop = "5";
     }
 }
 
 //----------------------------------------------------------------------------------------------
+let projectU1 = document.querySelector("#projectU1");
+
+projectU1.addEventListener("mouseover", function() {
+    projectU1.style.opacity = "100%";
+    console.log(projectU1);
+});
+
+projectU1.addEventListener("mouseout", function() {
+    projectU1.style.opacity = "0%";
+});
+
+//----------------------------------------------------------------------------------------------
+
 let projectU2 = document.querySelector("#projectU2");
 
 projectU2.addEventListener("mouseover", function() {
@@ -107,14 +116,3 @@ projectU3.addEventListener("mouseout", function() {
 });
 
 //----------------------------------------------------------------------------------------------
-
-let projectU4 = document.querySelector("#projectU4");
-
-projectU4.addEventListener("mouseover", function() {
-    projectU4.style.opacity = "100%";
-    console.log(projectU4);
-});
-
-projectU4.addEventListener("mouseout", function() {
-    projectU4.style.opacity = "0%";
-});

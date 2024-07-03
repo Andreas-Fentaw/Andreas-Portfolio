@@ -8,49 +8,76 @@
         <link rel="stylesheet" href="style.css">
         <script defer src="script.js"></script>
     </head>
-<body>
-    <header>
-        <div class="navbarRight">
-            <h4 id="My Name">Andreas Fentaw</h4>
-            <div class="headerLinks">
-                <a href="https://github.com/neighborhood-karen" target="_blank">
-                    <img src="../images/github-mark-white.png" alt="my github" class="githubLogo">
-                </a>
-                <a href="https://www.linkedin.com/in/andreas-fentaw-359568311/" target="_blank">
-                    <img src="../images/In-White-128@2x.png" alt="my linkedin" class="linkedinLogo">
-                </a>
-                <a href="mailto:andreasfentaw@gmail.com" target="_blank" onclick="openInNewWindow(event)">
-                    <img src="../images/gmaillogo.jpg" alt="my email" class="gmailLogo">
-                </a>
-                <script>
-                    function openInNewWindow(event) {
-                        event.preventDefault();
-                        const url = event.currentTarget.href;
-                        window.open(url, 'newwindow', 'width=800,height=600');
-                    }
-                </script>
+    <body>
+        <header>
+            <div class="navbarRight">
+                <h4 id="My Name">Andreas Fentaw</h4>
+                <div class="headerLinks">
+                    <a href="https://github.com/neighborhood-karen" target="_blank">
+                        <img src="../images/github-mark-white.png" alt="my github" class="githubLogo">
+                    </a>
+                    <a href="https://www.linkedin.com/in/andreas-fentaw-359568311/" target="_blank">
+                        <img src="../images/In-White-128@2x.png" alt="my linkedin" class="linkedinLogo">
+                    </a>
+                </div>
+            
             </div>
+            <div class="myPage">
+                <div class="mypageLinks">
+                    <a href="../index.html" id="myLink1">
+                        <h1>Home</h1>
+                    </a>
+                    <a href="../Pages/About-Me.html" id="myLink5">
+                        <h1>About Me</h1>
+                    </a>
+                    <a href="../Pages/Technical-skills.html" id="myLink3">
+                        <h1>Technical Skills</h1> 
+                    </a>
+                    <a href="../Pages/My-projects.html" id="myLink2">
+                        <h1>My Projects</h1>
+                    </a>
+                    <a href="../Pages/Contact-Me.html" id="myLink4"> 
+                        <h1>Contact Me</h1> 
+                    </a>
+                </div>
+            </div>
+        </header>
+        <div class="page1">
+            <div class="page1-1">
+                <h1>My Technical Skills</h1>
+                <div class="gridContainer" id="HTMLlogo">
+                    <div class="imgContainer">
+                        <img src="../images/techinical-skills-logo/HTMLlogo.png" id="HTMLlogo">
+                    </div>
+                    <div class="imgContainer">
+                        <img src="../images/techinical-skills-logo/CSSlogo.png" alt="">
+                    </div>
+                    <div class="imgContainer">
+                        <img src="../images/techinical-skills-logo/JavaScript-Logo.png" id="JavaScript-Logo">
+                    </div>
+                    <div class="pythonLogo">
+                        <img src="../images/techinical-skills-logo/pythonLogo.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <figure>
+                <h1>Web Design</h1>
+                <img src="../images/Andreas's-Portfolio-pic.png" alt="">
+                <figcaption>You're looking at it!</figcaption>
+            </figure>
+            <script>
+                function limitScroll() {
+                    const scrollLimitVh = 100;
+                    const scrollLimitPx = window.innerHeight * (scrollLimitVh / 100);
         
+                    if (window.scrollY > scrollLimitPx) {
+                        window.scrollTo(0, scrollLimitPx);
+                    }
+                }
+        
+                document.addEventListener('scroll', limitScroll);
+                window.addEventListener('resize', limitScroll);
+            </script>
         </div>
-        <div class="myPage">
-            <div class="mypageLinks">
-                <a href="../index.html" id="myLink1">
-                    <h1>Home</h1>
-                </a>
-                <a href="../Pages/About-Me.html" id="myLink5">
-                    <h1>About Me</h1>
-                </a>
-                <a href="../Pages/Technical-skills.html" id="myLink3">
-                    <h1>Technical Skills</h1> 
-                </a>
-                <a href="../Pages/My-projects.html" id="myLink2">
-                    <h1>My Projects</h1>
-                </a>
-                <a href="../Pages/Contact-Me.html" id="myLink4"> 
-                    <h1>Contact Me</h1> 
-                </a>
-            </div>
-        </div>
-    </header>
-</body>
+    </body>
 </html>

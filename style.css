@@ -26,6 +26,7 @@
 body {
     margin: 0;
     font-family: playright;
+    overflow-x: hidden;
 }
 
 .landingPage {
@@ -55,6 +56,13 @@ header {
 
 .navbarRight h4 {
     font-size: 1.7vw;
+}
+
+.navbarRight p {
+    font-size: 1vw;
+    margin: 0px;
+    padding-left: 1vw;
+    padding-right: 1vw;
 }
 
 header h4 {
@@ -128,8 +136,22 @@ header h4 {
     width: 100%;
     height: 100%;
     border-radius: 30%;
-    border-top: rgb(132, 142, 145) solid 1vw;
-    border-left: rgb(132, 142, 145) solid 1vw;
+    box-shadow: rgb(132, 142, 145) 4vw;
+    box-shadow: 0.7vw 0.3vw rgb(132, 142, 145);
+    position: relative;
+    right: -200%;
+    animation: slide-in 2s ease forwards;
+}
+
+@keyframes slide-in {
+    0% {
+        right: -200%;
+        opacity: 0;
+    }
+    100% {
+        right: 0%;
+        opacity: 1;
+    }
 }
 
 /* MY PICS CSS END */
@@ -142,6 +164,7 @@ header h4 {
     height: 80vh;
     padding-left: 15vw;
     padding-top: 6vw;
+    box-shadow: inset 0px -2vw 2vw rgb(244, 204, 139), inset 0 -1vw 3vw rgb(244, 204, 139);
 }
 
 .myName h1{
@@ -198,3 +221,4 @@ header h4 {
 }
 
 /* CONTENT CSS END */
+
