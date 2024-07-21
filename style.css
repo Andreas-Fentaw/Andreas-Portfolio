@@ -221,18 +221,3 @@ header h4 {
 }
 
 /* CONTENT CSS END */
-
-/* CITATION CSS START */
-
-.citationSection {
-    background-color: rgb(244, 204, 139);
-    padding-bottom: 15vw;
-}
-
-.citationSection h1 {
-    margin: 0px;
-    padding-top: 20vw;
-    padding-left: 20vw;
-}
-
-/* CITATION CSS END */
